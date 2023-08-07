@@ -21,7 +21,7 @@ function Home03() {
       draggable: true,
       progress: undefined,
       theme: "light",
-    })
+    });
   };
 
   //Uppercase
@@ -37,7 +37,7 @@ function Home03() {
       draggable: true,
       progress: undefined,
       theme: "light",
-    })
+    });
   };
 
   //LOWERcase
@@ -53,7 +53,7 @@ function Home03() {
       draggable: true,
       progress: undefined,
       theme: "light",
-    })
+    });
   };
 
   // COPY
@@ -68,7 +68,7 @@ function Home03() {
       draggable: true,
       progress: undefined,
       theme: "light",
-    })
+    });
   };
 
   // RemoveSpc
@@ -84,7 +84,7 @@ function Home03() {
       draggable: true,
       progress: undefined,
       theme: "light",
-    })
+    });
   };
   return (
     <>
@@ -102,43 +102,26 @@ function Home03() {
             onChange={onchange}
           ></textarea>
         </div>
-        <button className="btn btn-primary mr-2" onClick={clearText}>
-          Clear Text
-        </button>
+        <div style={{ display: "flex", gap: "7px" }}>
+          <button className="btn btn-primary mr-2" onClick={clearText}>
+            Clear Text
+          </button>
 
-        <button className="btn btn-primary mr-2" onClick={Uppercase}>
-          Upper-Case
-        </button>
-        <button className="btn btn-primary mr-2" onClick={Lowercase}>
-          Lowercase
-        </button>
+          <button className="btn btn-primary mr-2" onClick={Uppercase}>
+            Upper-Case
+          </button>
+          <button className="btn btn-primary mr-2" onClick={Lowercase}>
+            Lowercase
+          </button>
 
-        {/* <button
-          className="btn btn-primary mr-2"
-          onClick={() => {
-            toast.success("Alert is working!", {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-              theme: "light",
-            }
-            );
-          }}
-        >
-          Alert
-        </button> */}
+          <button className="btn btn-primary mr-2" onClick={copytext}>
+            Copy text
+          </button>
 
-        <button className="btn btn-primary mr-2" onClick={copytext}>
-          Copy text
-        </button>
-
-        <button className="btn btn-primary mr-2" onClick={RemoveSpc}>
-          Remove Spc
-        </button>
+          <button className="btn btn-primary mr-2" onClick={RemoveSpc}>
+            Remove Spc
+          </button>
+        </div>
         <h1>Text Counter</h1>
         <p>
           {
